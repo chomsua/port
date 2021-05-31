@@ -101,6 +101,7 @@ a:hover{
     font-style: italic;
 
     letter-spacing: -0.3px;
+    margin-bottom: 150px;
 }
 /*recent works*/
 
@@ -126,12 +127,79 @@ a:hover{
 
 }
 
+
+/* INFO Section */
+
+/* profile-section*/
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+}
+
+#profile-picture{
+    width: 500px;
+    margin-right: 60px;
+}
+
+.introduction>h2{
+    margin: 0px;
+    font-family: 'Asap', sans-serif;
+    font-size: 32px;
+    color: #2dc7ff;
+}
+
+.introduction>p{
+    font-family: 'Nanum Gothic Coding', monospace
+    font-weight:50;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/*value section*/
+
+.value-menu{
+    font-family: 'Asap', sans-serif;
+    font-size: 32px;
+    margin: 30px 100px;
+}
+
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+
+
 /*footer*/
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contact{
