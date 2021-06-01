@@ -32,14 +32,13 @@ ul{
     margin: 0;
     font-family: 'Asap', sans-serif;
     font-size: 32px;
-    color: #2dc7ff;
 }
 
 
 .nav-menu{
-    font-family: 'Nanum Gothic Coding', monospace
+    font-family: 'Do Hyeon', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size:24px;
     color: gray;
 }
 a{
@@ -56,11 +55,13 @@ a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .korean-comment{
-    font-family: 'Nanum Gothic Coding', monospace
+    font-family: 'Do Hyeon', sans-serif;
     font-weight: 100;
-    font-size: 42px
+    font-size: 52px;
+    text-align: center;
 }
 
 .sample{
@@ -95,13 +96,12 @@ a:hover{
 }
 
 .english-comment{
-    font-family: 'Nanum Gothic Coding', monospace
+    font-family: 'Do Hyeon', sans-serif;
     font-weight:50;
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
 
     letter-spacing: -0.3px;
-    margin-bottom: 150px;
 }
 /*recent works*/
 
@@ -121,10 +121,6 @@ a:hover{
 
 .thumbnail{
     width: 600px;
-}
-
-.article-name{
-
 }
 
 
@@ -154,44 +150,98 @@ a:hover{
 }
 
 .introduction>p{
-    font-family: 'Nanum Gothic Coding', monospace
+    font-family: 'Do Hyeon', sans-serif;
     font-weight:50;
     font-size: 18px;
     margin-bottom: 40px;
 }
 
-/*value section*/
+/*photo-section*/
 
-.value-menu{
-    font-family: 'Asap', sans-serif;
-    font-size: 32px;
-    margin: 30px 100px;
-}
-
-.value-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    margin: 100px 150px;
-    margin-top: 20px;
-}
-
-.value{
+.photo-section{
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    justify-content: center;
     align-items: center;
+
+    margin: 100px 100px;
 }
 
-.value-icon{
-    width: 100px;
+#photo-picture1{
+    width: 600px;
+    margin-left: 60px;
+}
+
+#photo-picture2{
+    width: 600px;
+    margin-right: 60px;
+}
+
+.photo-container{
+    margin-bottom: auto;
+    
+}*/
+
+
+.photo-container>h1{
+    font-family: 'Asap', sans-serif;
+    font-weight:50;
+    font-size: 32px;
+    line-height:75px;
+}
+
+.photo-container>p{
+    font-size: 18px;
+    line-height: 42px;
+    width: 418px;
+
+    margin-bottom: 28px;
+}
+
+.photo-container>a{
+    font-size: 24px;
+    color: #fffffa;
+    text-decoration: none;
+
+    background: #2dc7ff;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.photo-container>a:hover{
+    transform: translateY(-8px);
+}
+
+.popup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
     height: 100px;
-    padding: 15px;
-    border: 2px solid black;
-    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0,5);
+    background-color: white;
+    border-radius: 5px;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    /*transition: all 0.2s;*/
 }
 
+.popup>a{
+    color: gray;
+    text-decoration: none;
+}
+.popup>p{
+  text-align: center;
+  color: #ff4646;
+}
+.popup:target{
+    opacity: 1;
+}
 
 
 /*footer*/
